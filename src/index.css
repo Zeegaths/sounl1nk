@@ -1,0 +1,264 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  height: 100vh;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  width: 100vw;
+  min-width: 320px;
+  min-height: 100vh;
+  max-width: 100vw;
+  overflow: hidden;
+}
+
+
+
+.dash-ctn::-webkit-scrollbar {
+  display: none;
+}
+
+.flx {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.welcome-ctn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.welcome-text-ctn > h4 {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 0.5vh;
+  color: #000;
+}
+
+.big-black-text {
+  font-size: 20px;
+  font-weight: 600;
+  color: #101828;
+}
+
+.medium-gray-text {
+  font-size: 16px;
+  font-weight: 500;
+  color: #98A2B3;
+}
+
+.medium-black-text {
+  font-size: 16px;
+  font-weight: 500;
+  color: #101828;
+}
+
+.small-gray-text {
+  font-size: 14px;
+  font-weight: 500;
+  color: #98A2B3;
+}
+
+.small-black-text {
+  font-size: 14px;
+  font-weight: 500;
+  color: #101828;
+}
+
+.user-ctn {
+  padding: 5vh 0 0;
+}
+
+p.dot {
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  background-color: #001DF5;
+}
+
+.addy-ctn {
+  margin-right: 1vw;
+}
+
+.welcome-btn {
+  border: 1.4px solid #6D6EFA;
+  padding: 0 1vw;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Card styles */
+.card-div {
+  background-color: #EAECF0;
+  border-radius: 10px;
+  height: 25vh;
+  text-align: left;
+}
+
+.card-div.first {
+  background-color: #1A2335;
+}
+
+.card-div.first .card-hero {
+  color: #fff;
+}
+
+.card-div.first .card-text {
+  color: #98A2B3;
+}
+
+.card-hero {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.cards-ctn {
+  margin: 3vh 0;
+}
+
+/* Table styles */
+.table-ctn {
+  width: 70vw;
+  overflow-x: scroll;
+}
+
+.table-ctn > table {
+  width: 100%;
+  max-width: 100%;
+  min-width: 80vw;
+  border: 1px solid rgb(239, 230, 230);
+  border-radius: 10px;
+  overflow-x: auto;
+}
+
+.pic-td {
+  width: 50%;
+}
+
+table tr {
+  padding: 10vh 1.5vw;
+  text-align: center;
+  cursor: pointer;
+}
+
+tbody tr:nth-of-type(odd) {
+  background-color: #EAECF0;
+}
+
+.btns {
+  margin: 0;
+  padding: 0.5vw;
+  cursor: pointer;
+  color: #344054;
+  border-radius: 8px;
+  border: 1px solid rgb(125, 122, 122);
+}
+
+/* Market place specific styles */
+.market-ctn-btn {
+  color: #fff;
+  border-radius: 10px;
+  padding: 1vh 0.9vw;
+}
+
+.card-ctn {
+  flex-basis: 21%;
+  height: 389px;
+  padding: 2vh 16px 8vh;
+  gap: 16px;
+  border-radius: 8px;
+  border: 1.4px solid #E5E5EA;
+  text-align: left;
+  cursor: pointer;
+}
+
+.feelings {
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: left;
+  margin-bottom: 1vh;
+}
+
+.band-ctn {
+  padding: 1vh 1vw;
+  background: #EDEEF2;
+  border-radius: 6px;
+  margin-top: 2vh;
+}
+
+.items-ctn {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+/* Responsive styles for small screens */
+@media (max-width: 640px) {
+  .welcome-ctn {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .card-ctn {
+    flex-basis: 100%;
+    height: auto;
+    padding: 1rem;
+    margin: 0 auto;
+  }
+
+  .items-ctn {
+    grid-template-columns: 1fr; /* Single column layout */
+    display: grid;
+    gap: 1.5rem;
+  }
+
+  .table-ctn {
+    width: 100%;
+  }
+
+  .market-ctn-btn {
+    padding: 0.8rem 1.2rem;
+    text-align: center;
+  }
+
+  .slide-ctn {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .band-ctn {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .feelings {
+    font-size: 1.2rem;
+  }
+}
+
+/* Neon effects */
+.neon-text {
+  color: #50c9f7;
+  text-shadow: 0 0 8px #50c9f7, 0 0 15px #50c9f7;
+}
+
+.neon-button {
+  background: linear-gradient(90deg, #50c9f7, #3a85c7);
+  transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.neon-button:hover {
+  box-shadow: 0 0 15px #50c9f7, 0 0 30px #3a85c7;
+  transform: translateY(-2px);
+}
