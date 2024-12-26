@@ -1,5 +1,7 @@
-Soundlink Conract Address: 0xCb5Df1bE4212440b0C92318A30acB908a424aF64
-Rapbattle contract Adress: 0xCb5Df1bE4212440b0C92318A30acB908a424aF64
+### Soundlink Conract Address: 
+0xCb5Df1bE4212440b0C92318A30acB908a424aF64
+### Rapbattle contract Adress:
+0xCb5Df1bE4212440b0C92318A30acB908a424aF64
 
 
 # Project Overview: Soundlink Platform
